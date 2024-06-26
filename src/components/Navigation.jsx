@@ -22,12 +22,12 @@ const Navigation = ()=> {
       setActiveLink(value);
     }
     return(
-        <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
+      <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
         <Container>
           <Navbar.Brand href="#home">
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav" className='justify-content-center'>
             <Nav className="me-auto">
               <Nav.Link href="#about-me" className={activeLink ==='about-me' ? 'active navbar-link': 'navbar-link'} onClick={()=> onUpdateActiveLink('about-me')}>About Me</Nav.Link>
               <Nav.Link href="#project" className={activeLink ==='project' ? 'active navbar-link': 'navbar-link'} onClick={()=> onUpdateActiveLink('project')}>Project</Nav.Link>

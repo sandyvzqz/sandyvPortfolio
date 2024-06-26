@@ -14,32 +14,38 @@ const Project = () => {
     const projects = [
         {
             title: "PWA Text Editor",
-            description: "Text editor that can be used offline and uses IndexedDB api to store and retrieve data.",
+            githubRepo: 'https://github.com/sandyvzqz/pwaTextEditor',
+            websiteLink: 'https://pwa-texteditor-l4id.onrender.com/',
             imageUrl: pwaTextEditor,
         },
         {
             title: "SQL Employee Tracker",
-            description: "A web application that uses the terminal to modify and view an employee database",
+            githubRepo: 'https://github.com/sandyvzqz/SqlEmployeeTracker',
+            websiteLink: 'https://github.com/sandyvzqz/SqlEmployeeTracker',
             imageUrl: sqlEmployeeTracker,
         },
         {
             title: "ORM E-commerce",
-            description: "Web application that uses front and backend to successfully perform CRUD operations on a company's e-commerce database.",
+            githubRepo: 'https://github.com/sandyvzqz/ORM-E-CommerceBackEnd',
+            websiteLink: 'https://github.com/sandyvzqz/ORM-E-CommerceBackEnd',
             imageUrl: ormEcommerce,
         },
         {
             title: "DataSnake",
-            description: "Backend snake game application created as a group project that utilizes: JS, Handlebars, MySql, bcrypt, and animeJS technologies.",
+            githubRepo: 'https://github.com/ajprobel/datasnake',
+            websiteLink: 'https://group4-project2-c23a5470e6d9.herokuapp.com/login',
             imageUrl: datasnake ,
         },
         {
             title: "Timed Quiz",
-            description: "Web application that uses JS Dom methods, event delegation and web api storage to store a user's quiz store.",
+            githubRepo: 'https://github.com/sandyvzqz/timedQuiz',
+            websiteLink: 'https://sandyvzqz.github.io/timedQuiz/',
             imageUrl: timedQuiz,
         },
         {
             title: "Practice Webpage",
-            description: "First website I ever created using only HTML and CSS.",
+            githubRepo: 'https://github.com/sandyvzqz/practice-webpage',
+            websiteLink: 'https://sandyvzqz.github.io/practice-webpage/',
             imageUrl: practiceWebpage,
         },
     ]
@@ -55,15 +61,13 @@ const Project = () => {
                         <Tab.Content>
                             <Tab.Pane eventKey="first">
                                 <Row>
-                                    {
-                                        projects.map((project, index) => {
-                                            return(
-                                                <ProjectCard
-                                                    key ={index}
-                                                    {...project}/>
-                                            )
-                                        })
-                                    }
+                                    {projects.map((project, index) => {
+                                        return (
+                                            <ProjectCard key={index}
+                                            {...project} />
+                                        )
+                                    })
+                                }
                                 </Row>
                             </Tab.Pane>
                             <Tab.Pane eventKey="second">Second</Tab.Pane>

@@ -5,7 +5,7 @@
   font-family: 'Playfair Display';
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 html{
@@ -15,8 +15,8 @@ html{
 
 body{
   font-weight: 400;
-  overflow-x: hidden;
-  position: relative;
+  /* overflow-x: hidden; */
+  /* position: relative; */
   background-color: rgb(138, 128, 114) !important;
   color: blanchedalmond !important;
   font-family: 'Playfair Display' !important;
@@ -26,6 +26,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
+}
+
+/* Header */
+.header{
+  background-image: url('assets/images/mountains.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+  position: relative;
+}
+.title{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 2rem;
 }
 
 /* About Me */
@@ -145,13 +161,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: auto;
 }
-.proj-imgbx{
+.proj-imgbox{
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
 }
-.proj-imgbx::before{
+.proj-imgbox::before{
   content: "";
   background: linear-gradient(90.21deg, #bc9e51 -5.91%, #bebc42 111.58%);
   opacity: 0.85;
@@ -160,10 +176,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 0;
   transition: 0.4s ease-in-out;
 }
-.proj-imgbx:hover::before{
+.proj-imgbox:hover::before{
   height: 100%;
 }
-.proj-txtx{
+.proj-txt{
   position: absolute;
   text-align: center;
   top: 65%;
@@ -173,17 +189,18 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   width: 100%;
 }
-.proj-imgbx:hover .proj-txtx{
+.proj-imgbox:hover .proj-txt{
   top: 50%;
   opacity: 1;
 }
-.proj-txtx h4{
+.proj-txt h4{
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
 }
-.proj-txtx span{
+.proj-txt p{
+  color: #fff;
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
@@ -192,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navbar */
 nav.navbar{
-  padding: 15px 0;
+  padding: 10px 0;
   position: fixed;
   width: 100%;
   top: 0;
