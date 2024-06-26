@@ -1,6 +1,6 @@
 // import CSS file for styling
 
-function Header(){
+const Header = ()=> {
 
 }
 

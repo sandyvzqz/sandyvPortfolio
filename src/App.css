@@ -224,47 +224,6 @@ span.navbar-text{
   align-items: center;
 }
 
-.social-icon{
-  display: inline-block;
-  margin-left: 14px;
-}
-
-.social-icon a{
-  width: 50px;
-  height: 50px;
-  background: white;
-  display: inline-flex;
-  border-radius: 50%;
-  margin-right: 6px;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  border: 1px solid black;
-}
-
-.social-icon img{
-  height: 50px;
-  width: 50px;
-}
-
-.social-icon a::before{
-  content: '';
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  background-color: #fff;
-  border-radius: 50px;
-  transform: scale(0);
-  transition: 0.3s ease-in-out;
-}
-
-.social-icon a:hover::before {
-  transform: scale(1);
-}
-
-.social-icon a:hover img{
-  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(90%) hue-rotate(346deg) brightness(90%);
-}
 
 .navbar-text button{
   font-weight: 700;
@@ -338,17 +297,54 @@ span.navbar-text{
 .footer{
   padding: 0 0 50px 0;
 }
-.footer .social-icon{
+/* FIGURE */
+/* OUT */
+/* ALIGNMENT */
+.social-icon{
+  display:flex;
+  justify-content: center;
+  /* display: inline-block; */
+  margin-left: 14px;
+}
+
+.social-icon a{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: white;
+  /* display: inline-flex; */
+  border-radius: 50%;
+  margin-right: 6px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  line-height: 1;
+  border: 1px solid black;
+}
+
+.social-icon img{
+  height: 50px;
+  width: 50px;
+}
+
+.social-icon a::before{
+  content: '';
+  width: 50px;
+  height: 50px;
   position: absolute;
+  background-color: #fff;
+  border-radius: 50px;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
 }
-.footer p{
-  font-weight: 400;
-  font-size: 15px;
-  color: #e8dcdc;
-  letter-spacing: 0.5px;
-  margin-top: 20px;
-  position: relative;
+
+.social-icon a:hover::before {
+  transform: scale(1);
 }
+
+.social-icon a:hover img{
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(90%) hue-rotate(346deg) brightness(90%);
+}
+
 
 .App {
   text-align: center;

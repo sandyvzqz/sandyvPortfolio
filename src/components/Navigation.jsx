@@ -2,7 +2,7 @@ import { useState , useEffect} from 'react';
 import  { Navbar, Container, Nav } from 'react-bootstrap';
 import '../App.css';
 
-function Navigation(){
+const Navigation = ()=> {
     const [activeLink, setActiveLink] = useState('about-me');
     const [scrolled, setScrolled] = useState(false);
     useEffect(() => {
