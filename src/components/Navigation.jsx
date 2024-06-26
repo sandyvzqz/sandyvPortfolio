@@ -1,10 +1,6 @@
 import { useState , useEffect} from 'react';
 import  { Navbar, Container, Nav } from 'react-bootstrap';
 import '../App.css';
-// importing image/logos from assets library
-import github from '../assets/images/github.svg';
-import linkedIn from '../assets/images/linkedIn.svg';
-import stackOverflow from '../assets/images/stackOverflow.svg';
 
 function Navigation(){
     const [activeLink, setActiveLink] = useState('about-me');
@@ -38,13 +34,6 @@ function Navigation(){
               <Nav.Link href="#resume" className={activeLink ==='resume' ? 'active navbar-link': 'navbar-link'} onClick={()=> onUpdateActiveLink('resume')}>Resume</Nav.Link>
               <Nav.Link href="#contact" className={activeLink ==='contact' ? 'active navbar-link': 'navbar-link'} onClick={()=> onUpdateActiveLink('contact')}>Contact</Nav.Link>
             </Nav>
-            <span className="navbar-text">
-              <div className="social-icon">
-                <a href="github.com/sandyvzqz"><img src={github} alt="github logo"/></a>
-                <a href="linkedin.com"><img src={linkedIn} alt="linkedIn logo"/></a>
-                <a href="stackoverflow.com"><img src={stackOverflow} alt="stackOverflow logo"/></a>
-              </div>
-            </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
