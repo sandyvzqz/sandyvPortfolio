@@ -12,9 +12,9 @@ const Footer = ()=> {
                 <Row>
                     <Col sm={12} className="text-center"> 
                         <div className="social-icon">
-                            <a href="github.com/sandyvzqz"><img src={github} alt="github logo"/></a>
-                            <a href="linkedin.com"><img src={linkedIn} alt="linkedIn logo"/></a>
-                            <a href="stackoverflow.com"><img src={stackOverflow} alt="stackOverflow logo"/></a>
+                            <a href="https://github.com/sandyvzqz" target="_blank"><img src={github} alt="github logo"/></a>
+                            <a href="https://linkedin.com" target="_blank"><img src={linkedIn} alt="linkedIn logo"/></a>
+                            <a href="https://stackoverflow.com" target="_blank"><img src={stackOverflow} alt="stackOverflow logo"/></a>
                         </div>
                     </Col>
                 </Row>

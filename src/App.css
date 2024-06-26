@@ -30,18 +30,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header */
 .header{
-  background-image: url('assets/images/mountains.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100px;
   position: relative;
 }
 .title{
   position: absolute;
   bottom: 0;
-  left: 0;
-  font-size: 2rem;
+  right: 0;
+  font-size: 1.5rem;
 }
 
 /* About Me */
@@ -49,14 +45,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   padding: 260px 0 100px 0;
   background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-/* find smaller image */
-.about img{
-  height: auto;
-  width: 40%;
-  border-radius: 20%;
 }
 
 .about .tagline{
@@ -314,9 +302,7 @@ span.navbar-text{
 .footer{
   padding: 0 0 50px 0;
 }
-/* FIGURE */
-/* OUT */
-/* ALIGNMENT */
+
 .social-icon{
   display:flex;
   justify-content: center;
