@@ -1,19 +1,30 @@
-import Navigation from './components/Navigation';
-import Header from './components/Header';
-import Project from './components/Project';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import React from 'react';
 import './App.css'
-// import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+//import necessary components and pages for rendering
+import Header from './components/Header';
+import Footer from './components/Footer';
+import AboutMe from './pages/AboutMe';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 
 function App() {
   return (
-    <div>
-      < Navigation />
-      < Header />
-      < Project />
-      {/* project will need a nested project card component */}
-      < Footer />
-    </div>
+    <Router>
+      <div>
+        <Header />
+          <section>
+            <Routes>
+              <Route path="/" element={<AboutMe/>}/>
+              <Route path="/portfolio" element={<Portfolio/>}/>
+              <Route path="/contact" element={<Contact/>}/>
+              <Route path="/resume" element={<Resume/>}/>
+            </Routes>
+          </section>
+          < Footer/>
+      </div>
+    </Router>
   )
 }
 
