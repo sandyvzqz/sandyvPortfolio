@@ -4,12 +4,13 @@ import '../App.css';
 
 const Header = ()=> {
     return(
-        <header className="header">
-            <div className="headerContent">
-                    <div className="title">
-                        Sandy Vazquez
-                    </div>
-                    <Navigation />
+        // className="header"
+        <header>
+            <div className="headerContainer">
+                <div>Sandy Vazquez</div>
+            </div>
+            <div className="navContainer">
+                <Navigation />
             </div>
         </header>
     )
