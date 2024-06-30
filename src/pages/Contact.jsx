@@ -64,32 +64,33 @@ const Contact = () => {
 
   return (
     <section>
-    <Form onSubmit={handleSubmit}>
-      {submitData && <Alert variant="success">Contact form submitted successfully!</Alert>}
-      <Form.Group className="mb-3" controlId="name">
-        <Form.Label>Name:</Form.Label>
-        <Form.Control type="text" placeholder="Name" value={formData.name} onChange={handleChange} 
-        isInvalid={!!error.name}/>
-        <Form.Control.Feedback type="invalid"/>
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="email">
-        <Form.Label>Email address:</Form.Label>
-        <Form.Control type="email" placeholder="email" value={formData.email}
-          onChange={handleChange}
-          isInvalid={!!error.email}
-        />
-        <Form.Control.Feedback type="invalid">
-          {error.email}
-        </Form.Control.Feedback>
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="message">
-        <Form.Label>Message:</Form.Label>
-        <Form.Control as="textarea" rows={3} value={formData.message} onChange={handleChange}
-        isInvalid={!!error.message} />
-        <Form.Control.Feedback type="invalid">{error.message}</Form.Control.Feedback>
-      </Form.Group>
-      <Button type="submit">Submit</Button>
-    </Form>
+      <h1>Contact</h1>
+      <Form onSubmit={handleSubmit}>
+        {submitData && <Alert variant="success">Contact form submitted successfully!</Alert>}
+        <Form.Group className="mb-3" controlId="name">
+          <Form.Label>Name:</Form.Label>
+          <Form.Control type="text" placeholder="Name" value={formData.name} onChange={handleChange} 
+          isInvalid={!!error.name}/>
+          <Form.Control.Feedback type="invalid"/>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="email">
+          <Form.Label>Email address:</Form.Label>
+          <Form.Control type="email" placeholder="email" value={formData.email}
+            onChange={handleChange}
+            isInvalid={!!error.email}
+          />
+          <Form.Control.Feedback type="invalid">
+            {error.email}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="message">
+          <Form.Label>Message:</Form.Label>
+          <Form.Control as="textarea" rows={3} value={formData.message} onChange={handleChange}
+          isInvalid={!!error.message} />
+          <Form.Control.Feedback type="invalid">{error.message}</Form.Control.Feedback>
+        </Form.Group>
+        <Button type="submit">Submit</Button>
+      </Form>
     </section>
   );
 };

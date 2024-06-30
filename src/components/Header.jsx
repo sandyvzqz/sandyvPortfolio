@@ -5,10 +5,8 @@ import '../App.css';
 const Header = ()=> {
     return(
         <header>
-            <div>
-                <div>Sandy Vazquez</div>
-            </div>
-            <div className="navContainer">
+            <div className="headerContent">
+                <h1 className="logo">Sandy Vazquez</h1>
                 <Navigation />
             </div>
         </header>

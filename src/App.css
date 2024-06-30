@@ -7,8 +7,21 @@ html, body{
   overflow-x: hidden;
 }
 
-header, footer {
+.headerContent{
   height: fit-content;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  padding: 10px;
+  margin-right: auto;
+  color: rgb(196, 243, 243);
+}
+
+footer{
+  height: 10vh;
   background-color: #333;
   color: white;
   display: flex;
@@ -21,32 +34,15 @@ header, footer {
   flex-direction: column;
   min-height: calc(100vh - 120px);
   overflow-y: auto; 
-}
-
-.section {
-  flex: 1; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; 
-  padding: 20px; 
-  box-sizing: border-box;
+  padding: 20px;
   background-color: aliceblue;
 }
 
-/* #root{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-} */
-
-/* TRY ADDING A SECTION CLASS TO STYLE EACH SECTION THAT GETS RENDERED */
 .proj-img{
   width: 100%;
   height: auto;
 }
+
 .proj-imgbx{
   position: relative;
   border-radius: 30px;
@@ -126,14 +122,9 @@ header, footer {
 }
 
 /* About Me */
-.about{
-  margin-top: 0;
-  padding: 260px 0 100px 0;
-}
-
-.about img{
+.profilePic{
   height: auto;
-  width: 40%;
+  width: 15%;
   border-radius: 20%;
 }
 
@@ -145,36 +136,25 @@ header, footer {
 }
 
 /* Footer */
-
-.social-icon a{
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  background: white;
-  border-radius: 50%;
-  margin-right: 6px;
-  line-height: 1;
-  border: 1px solid black;
-}
-
 .social-icon img{
   height: 50px;
   width: 50px;
 }
 
-.social-icon a::before{
-  content: '';
+.social-icon a{
+  display: inline-block;
   width: 50px;
   height: 50px;
-  position: absolute;
-  background-color: #cadecc;
-  border-radius: 50px;
-  transform: scale(0);
-  transition: 0.3s ease-out;
+  border-radius: 50%;
+  margin-right: 6px;
+  line-height: 1;
+  border: 1px solid black;
+  background-color: whitesmoke;
 }
 
-.social-icon a:hover::before {
-  transform: scale(1);
+.social-icon a:hover{
+  background-color: #cadecc;
+  transition: 0.3s ease-out;
 }
 
 .social-icon a:hover img{
