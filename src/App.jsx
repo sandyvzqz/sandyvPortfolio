@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './pages/AboutMe';
-// import Portfolio from './pages/Portfolio';
+import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
@@ -18,7 +18,7 @@ function App() {
           <section id="main-section">
             <Routes>
               <Route path="/" element={<About/>}/>
-              {/* <Route path="/portfolio" element={<Portfolio/>}/> */}
+              <Route path="/portfolio" element={<Portfolio/>}/>
               <Route path="/contact" element={<Contact/>}/>
               <Route path="/resume" element={<Resume/>}/>
             </Routes>

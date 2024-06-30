@@ -4,9 +4,8 @@ import '../App.css';
 
 const Header = ()=> {
     return(
-        // className="header"
         <header>
-            <div className="headerContainer">
+            <div>
                 <div>Sandy Vazquez</div>
             </div>
             <div className="navContainer">
