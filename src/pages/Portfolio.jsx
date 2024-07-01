@@ -7,7 +7,7 @@ const Portfolio = () => {
     <section>
         <div>
         <h1>Portfolio</h1>
-        <p>Welcome to my portfolio page!</p>
+        <p>Welcome to my portfolio page! <br></br>Below are a couple of the projects I have created during my first year as a web developer. Click on the links provided to see the github repositories and links to the deployed applications.</p>
         <Projects />
         </div>
     </section>

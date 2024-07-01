@@ -5,8 +5,10 @@ const Resume = () => {
         <section>
             <h1>Resume</h1>
             <div id="resumeContact">
-                <span>Sandy Vazquez</span>
-                <span>ssolivares0@gmail.com</span>
+                <ul>
+                    <li>Sandy Vazquez</li>
+                    <li>ssolivares0@gmail.com</li>
+                </ul>
             </div>
             <div>
                 <h3> Professional Experience</h3>
