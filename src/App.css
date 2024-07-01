@@ -88,6 +88,15 @@ footer{
   letter-spacing: 0.8px;
 }
 
+#projectLinks{
+  list-style-type: none;
+}
+
+#projectLinks a{
+  text-decoration: none;
+  color: rgb(197, 241, 241);
+}
+
 /* Navigation */
 .custom-navbar{
   background-color: rgb(132, 166, 196);

@@ -1,7 +1,6 @@
-// src/components/Projects.jsx
 import React from 'react';
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
-import ProjectCard from './ProjectCard'; // Adjust the path if necessary
+import ProjectCard from './ProjectCard';
 
 import pwaTextEditor from '../assets/images/pwaTextEditor.png';
 import datasnake from '../assets/images/datasnake.png';
@@ -14,43 +13,47 @@ const Projects = () => {
   const projects = [
     {
       title: 'PWA Text Editor',
-      description: 'Text editor that can be used offline and uses IndexedDB api to store and retrieve data.',
+      gitHub: 'https://github.com/sandyvzqz/pwaTextEditor',
+      deployedApp: 'https://pwa-texteditor-l4id.onrender.com/',
       imageUrl: pwaTextEditor,
     },
     {
       title: 'SQL Employee Tracker',
-      description: 'A web application that uses the terminal to modify and view an employee database',
+      gitHub: 'https://github.com/sandyvzqz/SqlEmployeeTracker',
+      deployedApp: 'https://github.com/sandyvzqz/SqlEmployeeTracker',
       imageUrl: sqlEmployeeTracker,
     },
     {
       title: 'ORM E-commerce',
-      description: 'Web application that uses front and backend to successfully perform CRUD operations on a company\'s e-commerce database.',
+      gitHub: 'https://github.com/sandyvzqz/ORM-E-CommerceBackEnd',
+      deployedApp: 'https://github.com/sandyvzqz/ORM-E-CommerceBackEnd',
       imageUrl: ormEcommerce,
     },
     {
       title: 'DataSnake',
-      description: 'Backend snake game application created as a group project that utilizes: JS, Handlebars, MySql, bcrypt, and animeJS technologies.',
+      gitHub: 'https://github.com/ajprobel/datasnake',
+      deployedApp: 'https://group4-project2-c23a5470e6d9.herokuapp.com/login',
       imageUrl: datasnake,
     },
     {
       title: 'Timed Quiz',
-      description: 'Web application that uses JS Dom methods, event delegation and web api storage to store a user\'s quiz store.',
+      gitHub: 'https://github.com/sandyvzqz/timedQuiz',
+      deployedApp: 'https://sandyvzqz.github.io/timedQuiz/',
       imageUrl: timedQuiz,
     },
     {
       title: 'Practice Webpage',
-      description: 'First website I ever created using only HTML and CSS.',
+      gitHub: 'https://github.com/sandyvzqz/practice-webpage',
+      deployedApp: 'https://sandyvzqz.github.io/practice-webpage/',
       imageUrl: practiceWebpage,
     },
   ];
 
   return (
-    // <section className="project" id="project">
+    // <section>
       <Container>
         <Row>
           <Col>
-            {/* <h2>Projects</h2> */}
-            {/* <p>This is a collection of all projects that I have completed during my coding bootcamp journey.</p> */}
             <Tab.Container id="projects-tab" defaultActiveKey="first">
               <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab"></Nav>
               <Tab.Content>
