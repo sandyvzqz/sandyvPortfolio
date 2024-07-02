@@ -89,7 +89,7 @@ const Contact = () => {
           isInvalid={!!error.message} />
           <Form.Control.Feedback type="invalid">{error.message}</Form.Control.Feedback>
         </Form.Group>
-        <Button type="submit">Submit</Button>
+        <Button type="submit" variant="secondary">Submit</Button>
       </Form>
     </section>
   );

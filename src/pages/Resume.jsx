@@ -2,13 +2,15 @@ import React from "react";
 
 const Resume = () => {
     return(
-        <section>
+        <section id="resumeContent">
             <h1>Resume</h1>
-            <div id="resumeContact">
-                <ul>
+            <div>
+                <h3>Resume</h3>
+                <div className="resumeContact">
                     <li>Sandy Vazquez</li>
+                    <li>(919)810-5588</li>
                     <li>ssolivares0@gmail.com</li>
-                </ul>
+                </div>
             </div>
             <div>
                 <h3> Professional Experience</h3>
@@ -31,6 +33,7 @@ const Resume = () => {
                 <li>SQL</li>
                 <li>REST APIs</li>
                 <li>Mongo DB</li>
+                <li>React </li>
             </div>
         </section>
     )

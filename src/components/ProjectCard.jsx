@@ -5,9 +5,9 @@ import { Col } from "react-bootstrap";
 const ProjectCard =({ title, gitHub, deployedApp, imageUrl}) => {
     return(
         <Col sm={6} md={4}>
-            <div className="proj-imgbx">
+            <div className="proj-imgbox">
                 <img className="proj-img"src={ imageUrl }/>
-                <div className="proj-txtx">
+                <div className="proj-txt">
                     <h4>{ title }</h4>
                     <ul id="projectLinks"> 
                         <li><a href={ gitHub } target="_blank">GitHub repository</a></li>
