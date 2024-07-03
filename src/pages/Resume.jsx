@@ -1,6 +1,21 @@
 import React from "react";
+import html2canvas from 'html2canvas';
+import jsPDF from "jspdf";
 
 const Resume = () => {
+    const downloadPDF = () =>{
+        const resumeContent = document.getElementById("resumeContent");
+
+        html2canvas(resumeContent).then((canvas) =>{
+            const imgData = canvas.toDataURL("image/png");
+            const pdf = new jsPDF("p", "mm", "a4");
+            const imgProps = pdf.getImageProperties(imgData);
+            const pdfWidth = pdf.internal.pageSize.getWidth();
+            const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+            pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+            pdf.save("SandyVresume.pdf");
+        });
+    };
     return(
         <section id="resumeContent">
             <h1>Resume</h1>
@@ -35,6 +50,7 @@ const Resume = () => {
                 <li>Mongo DB</li>
                 <li>React </li>
             </div>
+            <button onClick={ downloadPDF}>Download Resume</button>
         </section>
     )
 }
