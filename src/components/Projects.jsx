@@ -50,7 +50,6 @@ const Projects = () => {
   ];
 
   return (
-    // <section>
       <Container>
         <Row>
           <Col>
@@ -69,7 +68,6 @@ const Projects = () => {
           </Col>
         </Row>
       </Container>
-    // </section>
   );
 };
 

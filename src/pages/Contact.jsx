@@ -75,7 +75,7 @@ const Contact = () => {
         </Form.Group>
         <Form.Group className="mb-3" controlId="email">
           <Form.Label>Email address:</Form.Label>
-          <Form.Control type="email" placeholder="email" value={formData.email}
+          <Form.Control type="email" placeholder="Email" value={formData.email}
             onChange={handleChange}
             isInvalid={!!error.email}
           />
@@ -85,7 +85,7 @@ const Contact = () => {
         </Form.Group>
         <Form.Group className="mb-3" controlId="message">
           <Form.Label>Message:</Form.Label>
-          <Form.Control as="textarea" rows={3} value={formData.message} onChange={handleChange}
+          <Form.Control as="textarea" placeholder="Message" rows={3} value={formData.message} onChange={handleChange}
           isInvalid={!!error.message} />
           <Form.Control.Feedback type="invalid">{error.message}</Form.Control.Feedback>
         </Form.Group>
