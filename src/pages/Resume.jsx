@@ -51,8 +51,8 @@ const Resume = () => {
                     <li>Mongo DB</li>
                     <li>React </li>
                 </div>
-                <button onClick={ downloadPDF}>Download Resume</button>
             </div>
+            <button onClick={ downloadPDF}>Download Resume</button>
         </section>
     )
 }
