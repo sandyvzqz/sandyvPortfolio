@@ -177,6 +177,19 @@ p, #resumeContent{
   list-style-type: none;
 }
 
+#resumeBtn{
+  border-radius: 7px;
+  margin-top: 12px;
+  color: white;
+  background-color: rgb(116, 122, 122);
+  border: 1px black;
+  padding: 8px;
+}
+
+#resumeBtn:hover{
+  background-color: rgb(96, 102, 103);
+}
+
 /* Footer */
 footer{
   height: 10vh;

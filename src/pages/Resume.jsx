@@ -52,7 +52,7 @@ const Resume = () => {
                     <li>React </li>
                 </div>
             </div>
-            <button onClick={ downloadPDF}>Download Resume</button>
+            <button id="resumeBtn" onClick={ downloadPDF}>Download Resume</button>
         </section>
     )
 }
